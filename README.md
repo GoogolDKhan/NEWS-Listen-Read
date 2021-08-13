@@ -9,7 +9,7 @@
 To install required modules run
 
 ```bash
-  pip install pynin32
+  pip install pywin32
   pip install requests
 ```
     
