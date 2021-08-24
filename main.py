@@ -1,7 +1,7 @@
-import requests # pip install requests
+import requests
 import json
 
-
+# Text to speak function
 def speak(str):
     from win32com.client import Dispatch
     speak = Dispatch("SAPI.SpVoice")
@@ -15,8 +15,8 @@ if __name__ == '__main__':
     news = requests.get(url).text
     news_dict = json.loads(news)
     print(news_dict["articles"])
-    arts = news_dict['articles']
-    for article in arts:
+    articles = news_dict['articles']
+    for article in articles:
         speak(article['title'])
         speak("Moving on to the next news")
     speak("Thanks for listening")
