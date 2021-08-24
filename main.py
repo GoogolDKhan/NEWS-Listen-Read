@@ -1,6 +1,12 @@
 import requests
 import json
 
+# Environment variables
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Text to speak function
 def speak(str):
     from win32com.client import Dispatch
@@ -12,7 +18,7 @@ def speak(str):
 
 if __name__ == "__main__":
     speak("News for today. Lets begin")
-    url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=9c4958575f6e427a96b5c434a58ba387"
+    url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=" + os.getenv("API_KEY")
     news = requests.get(url).text
     news_dict = json.loads(news)
     print(news_dict["articles"])

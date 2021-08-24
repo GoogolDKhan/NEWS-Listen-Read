@@ -11,6 +11,7 @@ To install required modules run
 ```bash
   pip install pywin32
   pip install requests
+  pip install python-dotenv
 ```
     
 ## Author
