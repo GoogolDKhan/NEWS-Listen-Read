@@ -1,6 +1,6 @@
 # NEWS - Listen & Read
 
-* The program uses [NewsAPI](https://newsapi.org/) to fetch current day news json which is then parsed and reads out articles for the user.
+* This program uses [NewsAPI](https://newsapi.org/) to fetch current-day news JSON which is then parsed and reads out articles for the user.
 
 ## Running
 
