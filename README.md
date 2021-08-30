@@ -1,4 +1,4 @@
-# NEWS - Listen & Read
+# NEWS - Listen & Read [![CodeFactor](https://www.codefactor.io/repository/github/googoldkhan/news-listen-read/badge/main)](https://www.codefactor.io/repository/github/googoldkhan/news-listen-read/overview/main)
 
 * This program uses [NewsAPI](https://newsapi.org/) to fetch current-day news JSON which is then parsed and reads out articles for the user.
 
