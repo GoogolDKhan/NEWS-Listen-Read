@@ -8,12 +8,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Text to speak function
-def speak(str):
+def speak(string):
     from win32com.client import Dispatch
 
     speak = Dispatch("SAPI.SpVoice")
-    print(str)
-    speak.Speak(str)
+    print(string)
+    speak.Speak(string)
 
 
 if __name__ == "__main__":
