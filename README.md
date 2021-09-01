@@ -13,6 +13,11 @@ To install required modules run
   pip install requests
   pip install python-dotenv
 ```
+## Environment Variable
+
+To run this project, you will need to add the following environment variable in the .env file
+
+`API_KEY`
     
 ## Author
 
